@@ -8,12 +8,12 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
-    "@fastify/static": "^8.2.0",
     "@montagen/schema": "workspace:*",
     "@montagen/core": "workspace:*",
-    "fastify": "^5.5.0"
+    "hono": "^4.7.0"
   },
   "devDependencies": {
+    "@types/bun": "^1.2.0",
     "@types/node": "^22.18.0"
   }
 }

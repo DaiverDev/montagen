@@ -1,11 +1,11 @@
-import Fastify from 'fastify';
+import { Hono } from "hono";
 
-const PORT = parseInt(process.env.PORT ?? '3000', 10);
+const PORT = parseInt(process.env.PORT ?? "3000", 10);
 
-const app = Fastify({ logger: true });
+const app = new Hono();
 
-app.get('/', async (_req, reply) => {
-  reply.type('text/html').send(`<!doctype html>
+app.get("/", (c) => {
+  return c.html(`<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -35,14 +35,13 @@ app.get('/', async (_req, reply) => {
 </html>`);
 });
 
-app.get('/health', async (_req, reply) => {
-  reply.send({ status: 'ok' });
+app.get("/health", (c) => {
+  return c.json({ status: "ok" });
 });
 
-try {
-  await app.listen({ port: PORT, host: '0.0.0.0' });
-  console.log(`Server running at http://localhost:${PORT}`);
-} catch (err) {
-  app.log.error(err);
-  process.exit(1);
-}
+Bun.serve({
+  port: PORT,
+  fetch: app.fetch,
+});
+
+console.log(`Server running at http://localhost:${PORT}`);

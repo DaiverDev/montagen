@@ -51,7 +51,7 @@ Establish the project foundation using a Bun-based monorepo and verify that the 
 - Pure `seek(project, t)` function: interpolates keyframes (position/scale/rotation/opacity) with the 4 standard easings, returning a flat render tree.
 - Snapshot tests on `seek()` with fixed sample projects (no DOM, no server).
 
-**Expected deliverable:** `pnpm test` in `packages/core` passes, with cases covering interpolation for each easing and overlapping clips on different tracks.
+**Expected deliverable:** `bun test` in `packages/core` passes, with cases covering interpolation for each easing and overlapping clips on different tracks.
 
 ## Phase 2 — Server: State, Commands, Persistence
 
@@ -107,7 +107,7 @@ Establish the project foundation using a Bun-based monorepo and verify that the 
 ---
 
 ## Out of this plan (deferred)
-
+Commit it when you're done.
 - Headless export (Puppeteer + FFmpeg) and offline audio mixing.
 - Video proxies for preview.
 - Transitions beyond cut/cross-dissolve.

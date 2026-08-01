@@ -2,7 +2,7 @@
 
 ## Overview
 
-A single **local server (Node.js)** is the source of truth for the project. The UI (browser) and the agent (CLI/MCP) talk to the same server via the same API — they never write to the project file directly.
+A single **local server (Bun)** is the source of truth for the project. The UI (browser) and the agent (CLI/MCP) talk to the same server via the same API — they never write to the project file directly.
 
 ```
 Browser UI (human)  ─┐
@@ -54,7 +54,7 @@ This rule is doubly important now: if the preview does not run smoothly, the OBS
 | DSL Schema | Zod (`packages/schema`) | Validates at runtime and generates TS types (`z.infer`); also used to generate the JSON Schema exposed by MCP |
 | Render Engine | Pure TS package, no DOM/Node | Snapshot testable; reusable in preview and future export |
 | Player (Play Mode) | Dedicated module, `requestAnimationFrame` + Web Audio API | Synchronizes the engine's mathematical clock with the real clock of the `<video>`/`<audio>` elements |
-| Server | Node.js + Fastify | Lightweight, native WebSocket support via plugin, fast startup for a local process |
+| Server | Bun + Hono | Lightweight, native WebSocket support, fast startup for a local process |
 | Protocol | JSON-RPC 2.0 over HTTP (CLI/MCP) and WebSocket (UI, state push) | Single command contract for all three consumers; each method maps 1:1 to an MCP tool |
 | State & Commands | Immer (immutable patches) + command log on the server | Patches are used for undo/redo and the diff pushed via WebSocket |
 | Persistence | Atomic writes (tmp file + rename), debounced | Avoids project corruption if the process dies mid-write |
@@ -63,7 +63,7 @@ This rule is doubly important now: if the preview does not run smoothly, the OBS
 | CLI | `commander` or `clipanion`, thin wrapper over the JSON-RPC client | No custom logic — translates flags to RPC calls |
 | MCP Server | `@modelcontextprotocol/sdk`, each tool = one JSON-RPC method | JSON Schema is derived from Zod, exposing tools is almost mechanical |
 | Preprocessing | `ffprobe` (I-frame indexing), cached as sidecar JSON by file hash | Without duplicating or transcoding the original |
-| Packaging | pnpm workspaces (monorepo) | Shared types without publishing intermediate packages |
+| Packaging | Bun workspaces (monorepo) | Shared types without publishing intermediate packages |
 | Distribution | `npx <tool> serve` starts the server and opens `localhost:PORT` in the browser | Electron-free — UI runs in a standard browser, as requested |
 
 ## Export — deferred
