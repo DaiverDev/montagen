@@ -1,0 +1,12 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/schema" },
+    { "path": "packages/core" },
+    { "path": "packages/server" },
+    { "path": "packages/player" },
+    { "path": "packages/ui" },
+    { "path": "packages/cli" },
+    { "path": "packages/mcp" }
+  ]
+}

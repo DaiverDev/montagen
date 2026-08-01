@@ -1,0 +1,19 @@
+{
+  "name": "@montagen/server",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@fastify/static": "^8.2.0",
+    "@montagen/schema": "workspace:*",
+    "@montagen/core": "workspace:*",
+    "fastify": "^5.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0"
+  }
+}
