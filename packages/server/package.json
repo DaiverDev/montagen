@@ -5,7 +5,9 @@
   "type": "module",
   "main": "./src/index.ts",
   "scripts": {
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@montagen/schema": "workspace:*",
@@ -14,6 +16,7 @@
   },
   "devDependencies": {
     "@types/bun": "^1.2.0",
-    "@types/node": "^22.18.0"
+    "@types/node": "^22.18.0",
+    "vitest": "^3.2.0"
   }
 }

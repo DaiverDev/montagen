@@ -4,7 +4,15 @@
   "private": true,
   "type": "module",
   "main": "./src/index.ts",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
   "dependencies": {
     "@montagen/schema": "workspace:*"
+  },
+  "devDependencies": {
+    "execa": "^9.6.0",
+    "vitest": "^3.2.0"
   }
 }

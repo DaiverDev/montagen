@@ -3,6 +3,9 @@
 .agents/
 .commandcode/
 
+# reference
+TASKS.md
+
 # build
 dist/
 node_modules/
