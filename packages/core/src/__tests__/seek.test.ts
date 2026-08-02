@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { seek } from "../seek";
-import type { ProjectFile } from "@montagen/schema";
+import type { ProjectFile, Keyframe } from "@montagen/schema";
 import { IDENTITY } from "../keyframes";
 
 const baseProject: ProjectFile = {
@@ -17,7 +17,7 @@ function makeVideoClip(
   id: string,
   start: number,
   end: number,
-  keyframes = [{ t: 0, value: { x: 0, y: 0 }, easing: "linear" as const }],
+  keyframes: Keyframe[] = [{ t: 0, value: { x: 0, y: 0 }, easing: "linear" }],
 ) {
   return {
     id,

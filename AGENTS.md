@@ -22,10 +22,10 @@ You are working on a local video editor. This file is your entry point — also 
 - `docs/REQUIREMENTS.md` — functional scope, what is in and out of the current MVP
 - `docs/ARCHITECTURE.md` — layers, chosen stack and why, component diagram
 - `docs/DSL_SPEC.md` — project shape (schema v0.1, evolves as implemented)
-- `docs/TASKS.md` — implementation phases, in order. **Work in order**, each phase assumes that the previous one exists and works. Do not jump to the UI if the core engine does not have tests passing yet.
+- `TASKS.md` — implementation phases, in order. **Work in order**, each phase assumes that the previous one exists and works. Do not jump to the UI if the core engine does not have tests passing yet. This file is only for reference.
 
 ## How to work
 
-- Each phase of `docs/TASKS.md` has to end in something the user can test by hand (not just tests). The user wants to iterate quickly and see results, not a perfect architecture with nothing running.
+- Each phase of `TASKS.md` has to end in something the user can test by hand (not just tests). The user wants to iterate quickly and see results, not a perfect architecture with nothing running.
 - If you find an ambiguity in the DSL while implementing, do not resolve it in silence: update `docs/DSL_SPEC.md` with the decision and a note explaining why, in the same commit/PR.
 - Prefer to simplify the scope of a phase rather than getting blocked by a big design decision. If something requires a decision that changes the stack or architecture, mark it and continue with what is clear — don't overthink it.

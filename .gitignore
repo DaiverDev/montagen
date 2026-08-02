@@ -2,6 +2,7 @@
 
 .agents/
 .commandcode/
+.atl/
 
 # reference
 TASKS.md
