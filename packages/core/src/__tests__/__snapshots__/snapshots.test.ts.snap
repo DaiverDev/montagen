@@ -1,0 +1,521 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`snapshot: single clip seek at t=0 1`] = `
+[
+  {
+    "clipId": "clip-1",
+    "mediaTime": 0,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 0,
+  },
+]
+`;
+
+exports[`snapshot: single clip seek at t=0.5 1`] = `
+[
+  {
+    "clipId": "clip-1",
+    "mediaTime": 0.5,
+    "opacity": 0.875,
+    "transform": {
+      "opacity": 0.875,
+      "rotation": 11.25,
+      "scale": 1.25,
+      "x": 50,
+      "y": 25,
+    },
+    "zIndex": 0,
+  },
+]
+`;
+
+exports[`snapshot: single clip seek at t=1 1`] = `
+[
+  {
+    "clipId": "clip-1",
+    "mediaTime": 1,
+    "opacity": 0.75,
+    "transform": {
+      "opacity": 0.75,
+      "rotation": 22.5,
+      "scale": 1.5,
+      "x": 100,
+      "y": 50,
+    },
+    "zIndex": 0,
+  },
+]
+`;
+
+exports[`snapshot: single clip seek at t=1.5 1`] = `
+[
+  {
+    "clipId": "clip-1",
+    "mediaTime": 1.5,
+    "opacity": 0.625,
+    "transform": {
+      "opacity": 0.625,
+      "rotation": 33.75,
+      "scale": 1.75,
+      "x": 150,
+      "y": 75,
+    },
+    "zIndex": 0,
+  },
+]
+`;
+
+exports[`snapshot: single clip seek at t=2 1`] = `
+[
+  {
+    "clipId": "clip-1",
+    "mediaTime": 2,
+    "opacity": 0.5,
+    "transform": {
+      "opacity": 0.5,
+      "rotation": 45,
+      "scale": 2,
+      "x": 200,
+      "y": 100,
+    },
+    "zIndex": 0,
+  },
+]
+`;
+
+exports[`snapshot: single clip seek at t=2.5 1`] = `
+[
+  {
+    "clipId": "clip-1",
+    "mediaTime": 2.5,
+    "opacity": 0.4921875,
+    "transform": {
+      "opacity": 0.4921875,
+      "rotation": 45.703125,
+      "scale": 1.984375,
+      "x": 203.125,
+      "y": 98.4375,
+    },
+    "zIndex": 0,
+  },
+]
+`;
+
+exports[`snapshot: single clip seek at t=3 1`] = `
+[
+  {
+    "clipId": "clip-1",
+    "mediaTime": 3,
+    "opacity": 0.4375,
+    "transform": {
+      "opacity": 0.4375,
+      "rotation": 50.625,
+      "scale": 1.875,
+      "x": 225,
+      "y": 87.5,
+    },
+    "zIndex": 0,
+  },
+]
+`;
+
+exports[`snapshot: single clip seek at t=3.5 1`] = `
+[
+  {
+    "clipId": "clip-1",
+    "mediaTime": 3.5,
+    "opacity": 0.2890625,
+    "transform": {
+      "opacity": 0.2890625,
+      "rotation": 63.984375,
+      "scale": 1.578125,
+      "x": 284.375,
+      "y": 57.8125,
+    },
+    "zIndex": 0,
+  },
+]
+`;
+
+exports[`snapshot: single clip seek at t=4 1`] = `[]`;
+
+exports[`snapshot: multi-track overlay seek at t=0 1`] = `
+[
+  {
+    "clipId": "bg-clip",
+    "mediaTime": 0,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 0,
+  },
+]
+`;
+
+exports[`snapshot: multi-track overlay seek at t=1 1`] = `
+[
+  {
+    "clipId": "bg-clip",
+    "mediaTime": 1,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 0,
+  },
+]
+`;
+
+exports[`snapshot: multi-track overlay seek at t=2 1`] = `
+[
+  {
+    "clipId": "bg-clip",
+    "mediaTime": 2,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 0,
+  },
+  {
+    "clipId": "text-clip",
+    "mediaTime": 0,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 100,
+      "y": 200,
+    },
+    "zIndex": 1,
+  },
+]
+`;
+
+exports[`snapshot: multi-track overlay seek at t=3 1`] = `
+[
+  {
+    "clipId": "bg-clip",
+    "mediaTime": 3,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 0,
+  },
+  {
+    "clipId": "text-clip",
+    "mediaTime": 1,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 100,
+      "y": 200,
+    },
+    "zIndex": 1,
+  },
+]
+`;
+
+exports[`snapshot: multi-track overlay seek at t=4 1`] = `
+[
+  {
+    "clipId": "bg-clip",
+    "mediaTime": 4,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 0,
+  },
+  {
+    "clipId": "text-clip",
+    "mediaTime": 2,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 100,
+      "y": 200,
+    },
+    "zIndex": 1,
+  },
+  {
+    "clipId": "fg-clip",
+    "mediaTime": 0,
+    "opacity": 0.8,
+    "transform": {
+      "opacity": 0.8,
+      "rotation": 0,
+      "scale": 0.5,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 2,
+  },
+]
+`;
+
+exports[`snapshot: multi-track overlay seek at t=5 1`] = `
+[
+  {
+    "clipId": "bg-clip",
+    "mediaTime": 5,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 0,
+  },
+  {
+    "clipId": "text-clip",
+    "mediaTime": 3,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 100,
+      "y": 200,
+    },
+    "zIndex": 1,
+  },
+  {
+    "clipId": "fg-clip",
+    "mediaTime": 1,
+    "opacity": 0.8,
+    "transform": {
+      "opacity": 0.8,
+      "rotation": 0,
+      "scale": 0.5,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 2,
+  },
+]
+`;
+
+exports[`snapshot: multi-track overlay seek at t=6 1`] = `
+[
+  {
+    "clipId": "bg-clip",
+    "mediaTime": 6,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 0,
+  },
+  {
+    "clipId": "text-clip",
+    "mediaTime": 4,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 100,
+      "y": 200,
+    },
+    "zIndex": 1,
+  },
+  {
+    "clipId": "fg-clip",
+    "mediaTime": 2,
+    "opacity": 0.8,
+    "transform": {
+      "opacity": 0.8,
+      "rotation": 0,
+      "scale": 0.5,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 2,
+  },
+]
+`;
+
+exports[`snapshot: multi-track overlay seek at t=7 1`] = `
+[
+  {
+    "clipId": "bg-clip",
+    "mediaTime": 7,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 0,
+  },
+  {
+    "clipId": "text-clip",
+    "mediaTime": 5,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 100,
+      "y": 200,
+    },
+    "zIndex": 1,
+  },
+  {
+    "clipId": "fg-clip",
+    "mediaTime": 3,
+    "opacity": 0.8,
+    "transform": {
+      "opacity": 0.8,
+      "rotation": 0,
+      "scale": 0.5,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 2,
+  },
+]
+`;
+
+exports[`snapshot: multi-track overlay seek at t=8 1`] = `
+[
+  {
+    "clipId": "bg-clip",
+    "mediaTime": 8,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 0,
+  },
+  {
+    "clipId": "fg-clip",
+    "mediaTime": 4,
+    "opacity": 0.8,
+    "transform": {
+      "opacity": 0.8,
+      "rotation": 0,
+      "scale": 0.5,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 2,
+  },
+]
+`;
+
+exports[`snapshot: multi-track overlay seek at t=8.5 1`] = `
+[
+  {
+    "clipId": "bg-clip",
+    "mediaTime": 8.5,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 0,
+  },
+  {
+    "clipId": "fg-clip",
+    "mediaTime": 4.5,
+    "opacity": 0.8,
+    "transform": {
+      "opacity": 0.8,
+      "rotation": 0,
+      "scale": 0.5,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 2,
+  },
+]
+`;
+
+exports[`snapshot: multi-track overlay seek at t=9 1`] = `
+[
+  {
+    "clipId": "bg-clip",
+    "mediaTime": 9,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 0,
+  },
+]
+`;
+
+exports[`snapshot: multi-track overlay seek at t=9.5 1`] = `
+[
+  {
+    "clipId": "bg-clip",
+    "mediaTime": 9.5,
+    "opacity": 1,
+    "transform": {
+      "opacity": 1,
+      "rotation": 0,
+      "scale": 1,
+      "x": 0,
+      "y": 0,
+    },
+    "zIndex": 0,
+  },
+]
+`;
+
+exports[`snapshot: multi-track overlay seek at t=10 1`] = `[]`;
