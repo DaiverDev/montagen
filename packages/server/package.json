@@ -12,7 +12,7 @@
   "dependencies": {
     "@montagen/schema": "workspace:*",
     "@montagen/core": "workspace:*",
-    "hono": "^4.7.0"
+    "hono": "^4.13.1"
   },
   "devDependencies": {
     "@types/bun": "^1.2.0",
