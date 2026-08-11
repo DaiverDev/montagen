@@ -10,3 +10,4 @@ TASKS.md
 # build
 dist/
 node_modules/
+*.tsbuildinfo
