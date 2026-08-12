@@ -11,8 +11,7 @@ This repo starts with **composition** (DSL, render engine, server, preview/timel
   1. [`docs/REQUIREMENTS.md`](./docs/REQUIREMENTS.md) — what is being built and what is not (scope)
   2. [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md) — how it is structured, stack, decisions, and why
   3. [`docs/DSL_SPEC.md`](./docs/DSL_SPEC.md) — the project format (v0.1, live draft)
-  4. [`docs/TASKS.md`](./docs/TASKS.md) — step-by-step implementation plan
 
 ## Current status
 
-Phase 0 (monorepo bootstrap) — not started yet. See `docs/TASKS.md` for details on what to implement first.
+Phase 1 (DSL v0.1 + pure render engine) — complete. `packages/schema` now defines the Zod-backed DSL and `packages/core` provides pure `seek(t)` with easing and keyframe interpolation. Phase 2 is next.
